@@ -1,10 +1,11 @@
 import cv2
 import numpy
-from os import listdir
+from os import listdir, makedirs
 from os.path import isfile, join
 from PIL import Image
 
 class Combiner:
+    OUTPUT_FOLDER = 'output'
     def __init__(self, folder_path, logo_name=None, logo_width=None, logo_height=None) -> None:
         if folder_path[-1] == '/' or folder_path[-1] == '\\':
             raise Exception(f'folder path must not end with slash or back slash but got {folder_path}')
@@ -28,6 +29,8 @@ class Combiner:
         return pictures_list
 
     def combine_pictures(self, pictures_list, logo=None):
+
+        makedirs(self.OUTPUT_FOLDER, exist_ok=True)
         for i in range(0, len(pictures_list), 2):
             left_picture = cv2.imread(join(self.folder_path, pictures_list[i]))
             right_picture = cv2.imread(join(self.folder_path, pictures_list[i+1]))
@@ -37,4 +40,4 @@ class Combiner:
             pil_combined = Image.fromarray(combined.astype('uint8'), 'RGB')
             if logo is not None:
                 pil_combined.paste(logo, (pil_combined.width-logo.width, pil_combined.height-logo.height),logo)
-            pil_combined.save(f'IMG_COMB_{i}.jpg')
+            pil_combined.save(f'{self.OUTPUT_FOLDER}/IMG_COMB_{i}.jpg')

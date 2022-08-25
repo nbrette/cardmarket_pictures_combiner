@@ -8,10 +8,10 @@ parser.add_argument('--logo_width', help='The width of the logo that will be use
 parser.add_argument('--logo_height', help='The height of the logo that will be used when pasted on the final picture', required=False)
 args = parser.parse_args()
 
-if (args.logo_name is not None and args.logo_width is None):
-    raise Exception('Must specify a logo_width for the logo')
-if (args.logo_name is not None and args.logo_height is None):
-    raise Exception('Must specify a logo_height for the logo')
+#Check logo arguments
+if (any(value is None for value in [args.logo_name, args.logo_height, args.logo_width]) and any(value is not None for value in [args.logo_name, args.logo_height, args.logo_width])):
+    raise Exception('The args logo_name, logo_width and logo_height must be used all together, please make sure to use all 3 together')
+
 
 logo_width = None
 logo_height = None
