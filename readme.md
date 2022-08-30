@@ -14,7 +14,7 @@ cd cardmarket_pictures_combiner
 
 Install required packages:
  ```bash
- python3 install -r requirements.txt
+ pip3 install -r requirements.txt
  ```
 
  You're now ready to go !
