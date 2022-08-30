@@ -78,10 +78,8 @@ The combined pictures will be in a directory called `output`.
 
 If you have not guessed it yet I am a professional card retailler as well as an engineer, you can find my shop Retrostars on multiple marketplaces:  
 <a href="https://www.ebay.fr/str/retrostarsfr"><img src="https://ir.ebaystatic.com/cr/v/c1/ebay-logo-1-1200x630-margin.png" alt="drawing" width="150"/> </a>
-<a href="https://www.vinted.fr/member/38749036-retrostarsfr"><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/53f974b5000064000579e4b5/0x0.png
-" alt="drawing" width="150"/></a>
-<img src="https://static.cardmarket.com/img/5d8d1b8b4cacaf8f53f62ec483d7b124/Downloads/Logos/CardmarketLogo_Trademark_Blue_V23042018.png
-" alt="drawing" width="150"/>
+<a href="https://www.vinted.fr/member/38749036-retrostarsfr"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Vinted_logo.png" alt="drawing" width="150"/></a>
+<img src="https://media-exp1.licdn.com/dms/image/C4D1BAQGSI8aQBSk6ng/company-background_10000/0/1604578641958?e=2147483647&v=beta&t=8ZUqoki4v6G1hUGbP2lgTmuv4cawiUG9CRLVZHNJpc8" alt="drawing" width="150"/>
 
 In case you are a TCG seller and need a program to automate any of your task fell free to contact me at retrogamingstars@gmail.com
 
